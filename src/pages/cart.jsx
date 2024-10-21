@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import CartUI from '../components/CartUI';
 import Footer from '../components/Footer';
-import CardUI from '../components/CartUI'
 
 const App = () => {
   return (
