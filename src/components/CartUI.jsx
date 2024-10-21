@@ -6,8 +6,9 @@ const CartUI = () => {
     <div>
       <div>
         <h2>Cart Items</h2>
-        <a href=""></a>
+        <a href="#products">Back to shopping</a>
       </div>
+      <CartList/>
     </div>
   )
 }
