@@ -74,7 +74,7 @@ const Footer = () => {
         <hr className="bg-[#636363] h-[1px] w-full border-none mt-10 mb-5"/>
         <div className="flex flex-row justify-between items-center text-white text-sm">
           <span>&copy; 2024 - Copyright</span>
-          <span>Built by <a href="https://github.com/codegallantx" className="active:text-[#db6a18] text-[#db6a18]">CodeGallantX</a></span>
+          <span>Built by <a href="https://github.com/codegallantx" target='_blank' className="active:text-[#db6a18] text-[#db6a18]">CodeGallantX</a></span>
           <div className="flex flex-row items-center justify-end gap-2">
             <a href="#">Privacy</a>
             |
