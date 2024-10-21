@@ -45,7 +45,7 @@ const Header = () => {
           <ul className='flex flex-row items-center justify-center text-white gap-16'>
             <li><a href="/#products" className="border-b-2 border-b-white pb-1 font-medium">Cookware</a></li>
             <li><a href="#">Knives</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
       </nav>
       </header>

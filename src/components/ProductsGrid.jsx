@@ -83,7 +83,7 @@ const products = [
 // Product grid component
 const ProductsGrid = () => {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 p-6 mt-16'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 p-6 mt-10'>
       {products.map((product, index) => (
         <div key={index} className='relative w-96 h-auto mx-auto mb-8'>
           <div className='relative z-10 bg-white shadow-lg rounded overflow-hidden'>

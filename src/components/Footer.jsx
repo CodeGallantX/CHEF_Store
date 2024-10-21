@@ -25,7 +25,7 @@ const Footer = () => {
           <ul className='flex flex-row items-center justify-center text-white gap-16'>
             <li><a href="/#products">Cookware</a></li>
             <li><a href="#">Knives</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
           <div className='flex flex-col items-start justify-center gap-2 mt-4 md:mt-0'>
             <form onSubmit={handleSubmit} className='flex flex-row items-center w-full max-w-sm relative'>
@@ -36,7 +36,7 @@ const Footer = () => {
                 placeholder='Email address'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-grow font-sans bg-[#242424] outline-none pl-4 pr-20 py-3 rounded-lg border-none placeholder:text-[#636363] placeholder:text-md focus:ring-1 focus:ring-[#fff] text-md font-medium text-[#919090]"
+                className="flex-grow font-sans bg-[#242424] outline-none pl-4 pr-20 py-3 rounded-lg border-none placeholder:text-[#636363] placeholder:text-md focus:ring-1 focus:ring-[#fff] transition-all  duration-300 ease-in-out text-md font-medium text-[#919090]"
                 required
               />
               <button 

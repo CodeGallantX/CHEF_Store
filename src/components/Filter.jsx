@@ -9,7 +9,7 @@ const item = {
 const Filter = () => {
   return (
     <div>
-      <div className="flex flex-row justify-between items-center font-medium mt-5">
+      <div className="flex flex-row justify-between items-center font-medium mt-5 px-8">
         <div className='text-lg'>{item.total} items found</div>
         <select name="filter" id="filter" className='border border-black rounded py-2 px-3 text-[#db6a18]'>
             <option value="Popularity">Sort by: Popularity</option>
