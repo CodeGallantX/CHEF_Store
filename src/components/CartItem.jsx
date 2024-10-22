@@ -5,12 +5,12 @@ import React from 'react';
 const products = [
     {
         name: 'Classic Non-stick Set',
-        price: '190,000',
+        price: '100,000',
         url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/stainless-steel-pots-pans-isolated-white.jpg?updatedAt=1720283849632',
     },
     {
         name: 'Stain-Free Frying Pan',
-        price: '215,000',
+        price: '80,000',
         url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/bluepan.jpg?updatedAt=1720304132952',
     },
     // {
@@ -47,7 +47,7 @@ const CartItem = () => {
     return (
         <div>
             {products.map((product, index) => (
-            <div key={index} className='px-8 py-8 bg-[#ffffff] border border-[#e0dffe] rounded mt-6 flex flex-row items-start justify-between'>
+            <div key={index} className='px-8 py-8 bg-[#ffffff] border border-[#e0dffe] rounded mb-6 flex flex-row items-start justify-between gap-14'>
                 <div className="w-64 h-44">
                     <img src={product.url} alt={product.name} className="rounded-sm object-cover w-full h-full"/>
                 </div>
