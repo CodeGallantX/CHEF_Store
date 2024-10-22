@@ -1,57 +1,59 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
-const [email, setEmail] = useState('');
-  const handleSubmit = (event) => {
-    event.preventDefault();
+// const [email, setEmail] = useState('');
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
 
-    if (!email) {
-      alert("Please enter your email address.");
-      return;
-    }
+//     if (!email) {
+//       alert("Please enter your email address.");
+//       return;
+//     }
 
-    console.log("Email submitted:", email);
-    setEmail('');
-    alert("Thank you for signing up!");
-  };
+//     console.log("Email submitted:", email);
+//     setEmail('');
+//     alert("Thank you for signing up!");
+//   };
 
 
 const OrderSummary = () => {
   return (
-    <div>
-      <h3>Order Summary</h3>
-      <div>
+    <div className="w-full">
+      <h3 className='font-bold text-2xl font-serif'>Order Summary</h3>
+      <div className='font-medium text-[#3c3c3c] text-lg flex flex-col gap-4'>
         <div className='flex flex-row items-center justify-between border-b border-b-[#e0dffe] py-2'>
-            <span className='font-semibold text-lg'>Subtotal</span>
-            <span className='font-semibold text-lg'>₦180,000</span>
+            <span className='text-lg'>Subtotal</span>
+            <span className='text-lg'>₦180,000</span>
         </div>
         <div className='flex flex-row items-center justify-between border-b border-b-[#e0dffe] py-2'>
-            <span className='font-semibold text-lg'>Shipping</span>
-            <span className='font-semibold text-lg'>₦10,000</span>
+            <span className='text-lg'>Shipping</span>
+            <span className='text-lg'>₦10,000</span>
         </div>
         <div className='flex flex-row items-center justify-between border-b border-b-[#e0dffe] py-2'>
-            <span className='font-semibold text-lg'>Total</span>
-            <span className='font-semibold text-lg'>₦190,000</span>
+            <span className='text-lg'>Total</span>
+            <span className='text-lg'>₦190,000</span>
         </div>
       </div>
       <div>
-      <form onSubmit={handleSubmit} className='flex flex-row items-center w-full max-w-sm relative'>
+      <form className='flex flex-row items-center w-full'>
+        <div className='bg-transparent border border-black rounded h-16 w-full flex flex-row justify-end'>
+          <div className='flex flex-row items-center justify-end pl-2 py-2'>
               <input 
                 type="text"
                 name="promoCode" 
                 id="promoCode" 
                 placeholder='PROMO CODE'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-grow font-sans bg-[#242424] outline-none pl-4 pr-20 py-3 rounded-md border-black placeholder:text-[#636363] placeholder:text-md focus:ring-1 focus:ring-[#fff] transition-all  duration-300 ease-in-out text-md font-medium text-[#919090]"
+                className="flex-grow font-sans outline-none w-full h-8 mt-1 indent-3 placeholder:indent-3 bg-white placeholder:text-[#636363] placeholder:text-md transition-all  duration-300 ease-in-out text-md font-medium text-black"
                 required
               />
+          </div>
               <button 
                 type="submit" 
-                className='absolute group bg-[#db6a18] text-white px-3 py-3 rounded-r-md right-0 -translate-x-3 cursor-pointer transition-colors duration-200 hover:bg-black outline-none'>
+                className='group bg-[#db6a18] text-white px-8 h-14 py-2 rounded-r cursor-pointer transition-colors duration-200 hover:bg-black outline-none'>
                   Apply
               </button>                  
-            </form>
+          </div>
+      </form>
       </div>
     </div>
   )

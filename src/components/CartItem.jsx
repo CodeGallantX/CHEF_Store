@@ -13,32 +13,32 @@ const products = [
         price: '215,000',
         url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/bluepan.jpg?updatedAt=1720304132952',
     },
-    {
-        name: 'Transparent Kettle',
-        price: '100,000',
-        url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/transparent_jug.jpg?updatedAt=1720304094125',
-    },
-    {
-        name: 'Superior Non-stick Set',
-        price: '290,000',
-        url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/redpots.jpg?updatedAt=1720304148887',
-    },
-    {
-        name: 'Non-rust Frying Pan',
-        price: '80,000',
-        url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/copper_pan.jpg?updatedAt=1720304110112',
-    },
-    {
-        name: 'Double Coat Non-stick',
-        price: '120,000',
-        url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/whitepot.jpg?updatedAt=1720304126521',
-        theme: {
-            width: '20px',
-            height: '20px',
-            backgroundColor: '#78716c',
-            borderRadius: "100%",
-        },
-    },
+    // {
+    //     name: 'Transparent Kettle',
+    //     price: '100,000',
+    //     url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/transparent_jug.jpg?updatedAt=1720304094125',
+    // },
+    // {
+    //     name: 'Superior Non-stick Set',
+    //     price: '290,000',
+    //     url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/redpots.jpg?updatedAt=1720304148887',
+    // },
+    // {
+    //     name: 'Non-rust Frying Pan',
+    //     price: '80,000',
+    //     url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/copper_pan.jpg?updatedAt=1720304110112',
+    // },
+    // {
+    //     name: 'Double Coat Non-stick',
+    //     price: '120,000',
+    //     url: 'https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/whitepot.jpg?updatedAt=1720304126521',
+    //     theme: {
+    //         width: '20px',
+    //         height: '20px',
+    //         backgroundColor: '#78716c',
+    //         borderRadius: "100%",
+    //     },
+    // },
 ];
 
 
@@ -47,11 +47,11 @@ const CartItem = () => {
     return (
         <div>
             {products.map((product, index) => (
-            <div key={index} className='px-8 py-8 bg-[#ffffff] border border-[#e0dffe] rounded mt-6'>
+            <div key={index} className='px-8 py-8 bg-[#ffffff] border border-[#e0dffe] rounded mt-6 flex flex-row items-start justify-between'>
                 <div className="w-64 h-44">
                     <img src={product.url} alt={product.name} className="rounded-sm object-cover w-full h-full"/>
                 </div>
-                <div>
+                <div className='flex flex-col gap-6'>
                     <div className="flex flex-row justify-between">
                         <h3 className="text-xl font-bold font-serif">{product.name}</h3>
                         <span className='font-semibold text-2xl'>₦{product.price}</span>

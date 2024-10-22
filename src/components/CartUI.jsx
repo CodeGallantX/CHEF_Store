@@ -1,6 +1,6 @@
 import React from 'react'
 import CartList from './CartList';
-// import OrderSummary from './OrderSummary';
+import OrderSummary from './OrderSummary';
 
 const CartUI = () => {
   return (
@@ -10,9 +10,9 @@ const CartUI = () => {
           <h2 className='font-serif text-3xl font-semibold'>Cart Items</h2>
           <a href="/#products">&larr; Back to shopping</a>
         </div>
-        <div className='flex flex-row items-center justify-between'>
+        <div className='flex flex-row items-start justify-between'>
           <CartList/>
-          {/* <OrderSummary/> */}
+          <OrderSummary/>
 
         </div>
       </div>
