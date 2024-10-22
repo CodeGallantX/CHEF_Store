@@ -43,7 +43,7 @@ const OrderSummary = () => {
                 placeholder='PROMO CODE'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-grow font-sans bg-[#242424] outline-none pl-4 pr-20 py-3 rounded-lg border-none placeholder:text-[#636363] placeholder:text-md focus:ring-1 focus:ring-[#fff] transition-all  duration-300 ease-in-out text-md font-medium text-[#919090]"
+                className="flex-grow font-sans bg-[#242424] outline-none pl-4 pr-20 py-3 rounded-md border-black placeholder:text-[#636363] placeholder:text-md focus:ring-1 focus:ring-[#fff] transition-all  duration-300 ease-in-out text-md font-medium text-[#919090]"
                 required
               />
               <button 
