@@ -1,6 +1,6 @@
 import React from 'react'
 import CartList from './CartList';
-import OrderSummary from './OrderSummary';
+// import OrderSummary from './OrderSummary';
 
 const CartUI = () => {
   return (
@@ -12,7 +12,7 @@ const CartUI = () => {
         </div>
         <div className='flex flex-row items-center justify-between'>
           <CartList/>
-          <OrderSummary/>
+          {/* <OrderSummary/> */}
 
         </div>
       </div>
