@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import Filter from './Filter';
 import ProductsGrid from './ProductsGrid';
 import Alert from './Alert';

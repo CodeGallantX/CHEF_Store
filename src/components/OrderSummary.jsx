@@ -51,4 +51,4 @@ const OrderSummary = () => {
   )
 }
 
-export default OrderSummary
+export default OrderSummary;
