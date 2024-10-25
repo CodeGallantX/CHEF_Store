@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import CartList from './CartList';
 import OrderSummary from './OrderSummary';
 
@@ -11,8 +11,8 @@ const CartUI = () => {
           <a href="/#products" className='font-medium'>&larr; Back to shopping</a>
         </div>
         <div className='flex flex-row items-start mt-10'>
-          <CartList/>
-          <OrderSummary/>
+          <CartList />
+          <OrderSummary />
 
         </div>
       </div>

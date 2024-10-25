@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 const App = () => {
-  
+
   const targetDate = new Date("2024-10-25T23:59:59").getTime();
 
   const [days, setDays] = useState(0);
@@ -31,11 +31,11 @@ const App = () => {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <div className='relative h-full w-full m-0 p-0 selection:bg-black'>
-      <img className='w-screen h-screen object-cover' src="/upcoming-bg.jpg" alt="Maintenance bg" />
-      <div className="h-full w-full top-0 absolute bg-black opacity-40"></div>
-      <div className='absolute top-1/4 left-[8%] lg:left-[20%]'>
+        <img className='w-screen h-screen object-cover' src="/upcoming-bg.jpg" alt="Maintenance bg" />
+        <div className="h-full w-full top-0 absolute bg-black opacity-40"></div>
+        <div className='absolute top-1/4 left-[8%] lg:left-[20%]'>
           <div className='text-white px-10 xl:px-20 flex flex-col text-center gap-8'>
             <a href="/" className='flex flex-row justify-center w-44 mx-auto'>
               <img src="/logo.webp" alt="logo" />
@@ -46,7 +46,7 @@ const App = () => {
               <div className="relative flex flex-col gap-[2px] w-28 lg:w-40 py-7 rounded-lg backdrop-blur-md border-2 border-solid border-[#ffffff24]">
                 <div className='absolute w-full h-full top-0 left-0 bg-white opacity-10 -z-10 rounded-md'></div>
                 <span className="text-4xl lg:text-6xl font-bold">{days}</span>
-                <span className="text-sm font-bold">DAYS</span>  
+                <span className="text-sm font-bold">DAYS</span>
               </div>
               <div className="relative flex flex-col gap-[2px] w-28 lg:w-40 py-7 rounded-lg backdrop-blur-md border-2 border-solid border-[#ffffff24]">
                 <div className='absolute w-full h-full top-0 left-0 bg-white opacity-10 -z-10 rounded-md'></div>
@@ -65,9 +65,9 @@ const App = () => {
               </div>
             </div>
           </div>
+        </div>
       </div>
-      </div>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

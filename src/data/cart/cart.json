@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Classic Non-stick Set",
+    "price": "190,000",
+    "description": "This 5-quart pot is crafted from high-quality, durable materials that ensure even heat distribut...",
+    "url": "https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/stainless-steel-pots-pans-isolated-white.jpg?updatedAt=1720283849632",
+    "sizes": ["12", "20", "24"],
+    "colours": [
+         {"variant": "bg-stone-500 w-5 h-5 rounded-full"},
+         {"variant": "bg-black-500 w-5 h-5 rounded-full"}, 
+         {"variant": "bg-slate-500 w-5 h-5 rounded-full"}
+    ]
+  },
+  {
+    "name": "Stain-Free Frying Pan",
+    "price": "215,000",
+    "description": "This 5-quart pot is crafted from high-quality, durable materials that ensure even heat distribut...",
+    "url": "https://ik.imagekit.io/mshcgnjju/CHEF%20-%20Timbu%20Cloud%20Store/bluepan.jpg?updatedAt=1720304132952",
+    "sizes": ["10", "14", "18"],
+    "colours": [
+      {"variant": "bg-emerald-500 w-5 h-5 rounded-full"},
+      {"variant": "bg-gray-500 w-5 h-5 rounded-full"}, 
+      {"variant": "bg-slate-500 w-5 h-5 rounded-full"}
+    ]
+  }
+]
